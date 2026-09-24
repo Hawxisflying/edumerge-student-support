@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>EduSupport — Student Support & Ticket Management</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">E</div><div><strong>EduSupport</strong><span>Student Services</span></div></div>
+    <nav>
+      <button class="nav-item active" data-view="dashboard">▦ <span>Dashboard</span></button>
+      <button class="nav-item" data-view="tickets">▤ <span>Tickets</span></button>
+      <button class="nav-item" data-view="new">＋ <span>New Ticket</span></button>
+    </nav>
+    <div class="sidebar-note"><b>Prototype mode</b><br>Data is saved locally in this browser. No database is required for this assessment prototype.</div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><h1 id="pageTitle">Support Dashboard</h1><p id="pageSubtitle">Management visibility across student requests</p></div><button class="primary" id="topNew">＋ Create ticket</button></header>
+    <section id="dashboardView" class="view"></section>
+    <section id="ticketsView" class="view hidden"></section>
+    <section id="newView" class="view hidden"></section>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<div id="modalRoot"></div>
+<script src="app.js"></script>
+</body>
+</html>
